@@ -82,15 +82,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
 
-# GPS
-PRODUCT_PACKAGES += \
-    gps.msm8916
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf \
-    $(LOCAL_PATH)/gps/izat.conf:system/etc/izat.conf \
-    $(LOCAL_PATH)/gps/sap.conf:system/etc/sap.conf
-
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8916 \
@@ -149,7 +140,6 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    fstab.qcom \
     init.oppo.rc \
     init.oppo.usb.rc \
     init.qcom-common.rc \
