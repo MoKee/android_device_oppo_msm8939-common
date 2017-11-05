@@ -105,6 +105,9 @@ TARGET_USES_C2D_COMPOSITION := true
 TARGET_USES_ION := true
 USE_OPENGL_RENDERER := true
 
+# Encryption
+TARGET_HW_DISK_ENCRYPTION := true
+
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm8939
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
@@ -122,6 +125,9 @@ MALLOC_SVELTE := true
 # Power
 TARGET_POWERHAL_SET_INTERACTIVE_EXT := $(COMMON_PATH)/power/power_ext.c
 TARGET_POWERHAL_VARIANT := qcom
+
+# Properties
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 
 # Qualcomm support
 BOARD_USES_QCOM_HARDWARE := true
