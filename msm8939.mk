@@ -78,9 +78,6 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8916 \
-    libshim_camera \
-    libboringssl-compat \
-    libstlport \
     Snap
 
 # Charger
@@ -105,6 +102,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf \
     $(LOCAL_PATH)/gps/izat.conf:system/etc/izat.conf \
     $(LOCAL_PATH)/gps/sap.conf:system/etc/sap.conf
+
+# IPv6 tethering
+PRODUCT_PACKAGES += \
+    ebtables \
+    ethertypes
 
 # IRQ balance
 PRODUCT_COPY_FILES += \
@@ -140,12 +142,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.msm8916
 
-# Qualcomm
-PRODUCT_PACKAGES += \
-    dsi_config.xml \
-    netmgr_config.xml \
-    qmi_config.xml
-
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.qcom-common.rc \
@@ -164,12 +160,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     calmodule.cfg \
     sensors.msm8916
-
-# TWRP
-ifeq ($(WITH_TWRP),true)
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/twrp.fstab:recovery/root/etc/twrp.fstab
-endif
 
 # Wifi
 PRODUCT_PACKAGES += \
