@@ -1,0 +1,18 @@
+[
+  {
+    "repository": "android_device_oppo_common",
+    "target_path": "device/oppo/common"
+  },
+  {
+    "repository": "android_kernel_oppo_msm8939",
+    "target_path": "kernel/oppo/msm8939"
+  },
+  {
+    "repository": "android_vendor_oppo_msm8939-common-32",
+    "target_path": "vendor/oppo/msm8939-common-32"
+  },
+  {
+    "repository": "android_vendor_oppo_msm8939-common-64",
+    "target_path": "vendor/oppo/msm8939-common-64"
+  }
+]

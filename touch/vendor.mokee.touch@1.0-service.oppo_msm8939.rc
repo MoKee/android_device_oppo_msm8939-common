@@ -24,7 +24,7 @@ on boot
     chown system system /proc/touchpanel/letter_w_enable
     chmod 0660 /proc/touchpanel/letter_w_enable
 
-service vendor.touch-hal-1-0 /vendor/bin/hw/vendor.lineage.touch@1.0-service.oppo_msm8939
+service vendor.touch-hal-1-0 /vendor/bin/hw/vendor.mokee.touch@1.0-service.oppo_msm8939
     class hal
     user system
     group system

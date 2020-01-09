@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "vendor.lineage.touch@1.0-service.oppo_msm8939"
+#define LOG_TAG "vendor.mokee.touch@1.0-service.oppo_msm8939"
 
 #include <android-base/logging.h>
 #include <binder/ProcessState.h>
@@ -25,8 +25,8 @@
 using android::sp;
 using android::OK;
 
-using ::vendor::lineage::touch::V1_0::ITouchscreenGesture;
-using ::vendor::lineage::touch::V1_0::implementation::TouchscreenGesture;
+using ::vendor::mokee::touch::V1_0::ITouchscreenGesture;
+using ::vendor::mokee::touch::V1_0::implementation::TouchscreenGesture;
 
 int main() {
     sp<ITouchscreenGesture> touchscreenGesture = new TouchscreenGesture();
